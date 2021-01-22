@@ -4,7 +4,7 @@
 \alias{EstimatePower}
 \title{Estimate Power}
 \usage{
-EstimatePower(data, n.original, sims.power, analysis)
+EstimatePower(data, n.original, sims.power, analysis, n.rows, alpha)
 }
 \arguments{
 \item{data}{Dataset (matrix).}
@@ -14,6 +14,10 @@ EstimatePower(data, n.original, sims.power, analysis)
 \item{sims.power}{The number of samples to be simulated (scalar).}
 
 \item{analysis}{Function to produce a p value and an effect size estimate.}
+
+\item{n.rows}{The number of rows per subject in the dataset (scalar)}
+
+\item{alpha}{Set alpha level for analysis (scalar)}
 }
 \value{
 Power estimate generated through simulation (scalar).
@@ -34,5 +38,7 @@ original sample size.
      corr <- cor.test(data[,1], data[,2])
      return(list(effect.size = corr$estimate, p.value = corr$p.value))
    }, 
-   sims.power = 100)
+   sims.power = 100,
+   n.rows = 1, 
+   alpha = 0.05)
 }

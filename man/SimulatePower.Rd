@@ -12,7 +12,9 @@ SimulatePower(
   CI.level = 0.9,
   sims.power = 10000,
   sims.samples = 11,
-  seed = 1
+  seed = 1,
+  n.rows = 1,
+  alpha = 0.05
 )
 }
 \arguments{
@@ -28,9 +30,13 @@ SimulatePower(
 
 \item{sims.power}{The number of samples to be simulated (scalar); default = 10,000.}
 
-\item{sims.samples}{Number of samples analyzed at upper/lower bounds of CI (scalar); default = 11.}
+\item{sims.samples}{The number of samples analyzed at upper/lower bounds of CI (scalar); default = 11.}
 
 \item{seed}{Allows randomly generated numbers to be reproducible (scalar); default = 1.}
+
+\item{n.rows}{The number of rows per subject in the dataset (scalar); default = 1.}
+
+\item{alpha}{Set alpha level for analysis (scalar); default = 0.05.}
 }
 \value{
 Displays statistical power for point estimate of an effect size plus the lower and upper

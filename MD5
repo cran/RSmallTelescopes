@@ -1,6 +1,6 @@
-192eb9613908dcc5551855971a280d21 *DESCRIPTION
+142136d319c61778bfe0ab54865fdf4d *DESCRIPTION
 86a9c711326fcb00e17c1d269f9bf4d6 *LICENSE
-e8b2cb5aad436fe5fab37098d417e853 *NAMESPACE
-2b655bcf236e69b9b92bac8d32915807 *R/empiricalsmalltelescopes.R
-a70dc2bec8409ee5f82aa745fb4bbac0 *man/EstimatePower.Rd
-8b5f5e57fa41166f7f8498e418bdbeca *man/SimulatePower.Rd
+3fa191d0ecbd2d1544ddbbb31dbbcd97 *NAMESPACE
+3a632e1287e8e4a3dfd88cc332c85d21 *R/empiricalsmalltelescopes.R
+7521cf793cac226889621f3e7f03a07d *man/EstimatePower.Rd
+de57de4dce6f8bfa089f457939984b03 *man/SmallTelescopes.Rd

@@ -4,14 +4,14 @@
 \alias{EstimatePower}
 \title{Estimate Power}
 \usage{
-EstimatePower(data, n.original, sims.power, analysis, n.rows, alpha)
+EstimatePower(data, n.original, B.power, analysis, n.rows, alpha)
 }
 \arguments{
 \item{data}{Dataset (matrix).}
 
 \item{n.original}{The sample size of the original analysis (scalar).}
 
-\item{sims.power}{The number of samples to be simulated (scalar).}
+\item{B.power}{The number of samples to be simulated (scalar).}
 
 \item{analysis}{Function to produce a p value and an effect size estimate.}
 
@@ -38,7 +38,7 @@ original sample size.
      corr <- cor.test(data[,1], data[,2])
      return(list(effect.size = corr$estimate, p.value = corr$p.value))
    }, 
-   sims.power = 100,
+   B.power = 100,
    n.rows = 1, 
    alpha = 0.05)
 }
